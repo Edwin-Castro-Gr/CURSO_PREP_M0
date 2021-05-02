@@ -21,7 +21,7 @@
 
 ## Proceso de subida de homeworks
 
-__IMPORTANTE:__ Luego de completar cada una de las homeworks del día deberán ejecutar el siguiente comando para subir sus trabajos a sus repositorios (Deben estar posicionados sobre la carpeta principal `Curso.Prep.Henry` para que funcione y haber corrido previamente `npm install`:
+__IMPORTANTE:__ Luego de completar cada una de las homeworks del día deberán ejecutar el siguiente comando para subir sus trabajos a sus repositorios (Deben estar posicionados sobre la carpeta principal `FT-M0` para que funcione y haber corrido previamente `npm install`:
 
 Para la homework número 1 no es necesario ya que su trabajo se realiza por fuera de este repositorio
 
