@@ -86,27 +86,26 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  function num(x) {
-    if (x<90) {
+ 
+    if (num < 90) {
       return true;
     } else {
       return false;
     }
   }
-}
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  function num(x) {
-    if (x > 50) {
+  
+    if (num > 50) {
       return true;
     } else {
       return false;
     }
   }
-}
+
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
@@ -141,7 +140,7 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  const result = Math.pow(num,num);
+  const result = num*num;
   return result;
 }
 
@@ -226,7 +225,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  const perimetro = lado * lado;
+  const perimetro =  4 * lado;
   return perimetro;
 }
 
@@ -234,7 +233,7 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-  const areaT = base * altura;
+  const areaT = (base * altura)/2;
   return areaT;
 
 }
