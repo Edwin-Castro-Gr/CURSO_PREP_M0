@@ -35,7 +35,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  var result = a + b;
+  var result = x + y;
   return result;
 }
 
@@ -87,7 +87,7 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   function num(x) {
-    if (num>90) {
+    if (x<90) {
       return true;
     } else {
       return false;
@@ -100,7 +100,7 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   function num(x) {
-    if (num>500) {
+    if (x > 50) {
       return true;
     } else {
       return false;
@@ -141,21 +141,21 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  const result = math.pow(num,2);
+  const result = Math.pow(num,num);
   return result;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  const result = math.pow(num,3);
+  const result = num*num*num;
   return result;
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  const result = math.pow(num,exponent);
+  const result = Math.pow(num,exponent);
   return result;
 }
 
@@ -185,12 +185,13 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0) {
-    return 'Es positivo';
-  } else {
-    return 'Es negativo';
-  }
+  if (numero === 0) {
     return false;
+  } else if (numero > 0) {
+    return 'Es positivo';
+  }else{
+    return 'Es negativo';
+  }   
 }
 
 function agregarSimboloExclamacion(str) {
@@ -204,14 +205,14 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return 'Soy' + nombre + ' ' + apellido;
+  return nombre + ' ' + apellido;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola' + nombre + '!';
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
