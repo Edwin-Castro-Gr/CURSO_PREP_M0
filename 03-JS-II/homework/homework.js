@@ -22,7 +22,7 @@ function mayoriaDeEdad(edad) {
   if (edad >= 18) {
     return "Allowed";
   } else{
-    return "Not Allowed";
+    return "Not allowed";
   }
 }
   
@@ -111,7 +111,7 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  if(umero - Math.floor(numero) == 0){
+  if(numero - Math.floor(numero) == 0){
     return true;
   }else {
     return false;
@@ -193,19 +193,34 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  let arrayTablael
+  let arrayTabladel6=[];
+  for (let i = 0; i < 11; i++) {
+    arrayTabladel6.push(6*i);    
+  }
+  return arrayTabladel6;
 }
 
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero > 99 && numero < 1000) {
+    return true
+  } else {
+    return false
+  }
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  var x = numero;
+  var i = 0;
+  do {
+    i = i + 1;
+    x = x + 5;
+  } while (i < 8);
+  return x;
 }
 
 
