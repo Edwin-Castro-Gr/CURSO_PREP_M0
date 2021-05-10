@@ -38,7 +38,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(elemento);
+  array[array.length] = elemento;
+  return array;
 }
 
 
@@ -47,7 +48,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  return array.unshift(elemento);
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -57,7 +59,7 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  return palabras.split(' ');
+  return palabras.join(' ');
 }
 
 
@@ -149,7 +151,7 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if (numeroDeDia===1 ||numeroDeDia===7) {
+  if (numeroDeDia === 1 ||numeroDeDia === 7) {
     return 'Es fin de semana';
   } else {
     return 'Es dia Laboral';
@@ -162,7 +164,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   var num = n.toString();
-  if (num.charAt(0)==='9') {
+  if (num.charAt(0) === '9') {
     return true;
   } else {
     return false;
@@ -227,17 +229,19 @@ function breakStatement(numero) {
   //Pista: usá el statement 'break'
   // Tu código:
   var array=[];
-  var sum = 0;
+  var sum = numero;
   for (let i = 0; i < 10; i++) {
    sum = sum + 2;
-   if (sum === i) 
-    break;     
+   if (sum === i) break;     
    else {
-     array.push(suma)
-   }
-    
+     array.push(sum);
+   }    
   }
-
+  if (i < 10) {
+    return "Se interrumpió la ejecución";    
+  } else {
+    return array;    
+  }
 }
 
 
@@ -248,6 +252,16 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
+  var array=[];
+  var sum = numero;
+  for (let i = 0; i < 10; i++) {
+    if (i === 5)continue;
+    else{
+      sum = sum + 2;
+      array.push(sum);
+    }
+    return array;
+}
 }
 
 
