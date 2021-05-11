@@ -7,8 +7,8 @@ function crearGato(nombre, edad) {
   // Devuelve el objeto
   // Tu código:
   var gato = {
-    nombre:'Michin',
-    edad: 5,
+    nombre: nombre,
+    edad: edad,
     meow: function () {
       return 'Meow!';
     }
@@ -140,11 +140,11 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
-    var total = 0;
-    for (let i = 0; i < usuario.post.length; i++) {
-      total = total + usuario.post[i].likes;
+    var totallikes = 0;
+    for (let i = 0; i < usuario.posts.length; i++) {
+      totallikes = totallikes + usuario.posts[i].likes;
     }
-    return total
+    return totallikes;
 }
 
 function agregarMetodoCalculoDescuento(producto) {
@@ -157,7 +157,10 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-
+  producto.calcularPrecioDescuento = function () {
+    return producto.precio - (producto.precio * producto.porcentajeDeDescuento);
+  }
+  return producto;
 }
 
 // No modificar nada debajo de esta línea
