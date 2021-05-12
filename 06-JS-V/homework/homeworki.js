@@ -28,7 +28,7 @@ function agregarMetodoPrototype(Constructor) {
   // Tu código:
   Constructor.prototype.saludar = function () {
     return 'Hello World!';
-  }
+  };
 }
 
 function agregarStringInvertida() {
@@ -89,7 +89,7 @@ function agregarMetodo() {
   //Ej: "Juan, 22 años"
   Persona.prototype.datos = function() {
     return this.nombre + ", " + this.edad + " años";
-};
+    };
 } 
 
 // No modificar nada debajo de esta línea
