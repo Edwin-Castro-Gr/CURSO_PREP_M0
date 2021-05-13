@@ -56,13 +56,21 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  function filterItems(query) {
-    return array.filter(function(elementos) {
-        return elementos.toLowerCase().indexOf(query.toLowerCase()) > -1;
-    })
+//   function filterItems(query) {
+//     return array.filter(function(elementos) {
+//         return elementos.toLowerCase().findIndex(query.toLowerCase()) > -1;
+//     })
+//   }
+//   var newarray = filterItems('a')
+//   return newarray;
+// }
+var newArray = [];
+for(let i = 0; i<array.length; i++) {
+  if(array[i][0] === "a") {
+    newArray.push(array[i])
   }
-  var newarray = filterItems('a')
-  return newarray;
+}
+return newArray;
 }
 
 // No modificar nada debajo de esta línea
